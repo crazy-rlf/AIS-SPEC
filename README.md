@@ -2,8 +2,8 @@
 **Universal AI Service Connection Standard • 对标JDBC/URI的AI通用连接标准**
 
 [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
-[![GitHub Stars](https://img.shields.io/github/stars/AIS-SPEC/AIS-SPEC.svg?style=social)](https://github.com/AIS-SPEC/AIS-SPEC)
-[![GitHub Forks](https://img.shields.io/github/forks/AIS-SPEC/AIS-SPEC.svg?style=social)](https://github.com/AIS-SPEC/AIS-SPEC/fork)
+[![GitHub Stars](https://img.shields.io/github/stars/AIS-SPEC/AIS-SPEC.svg?style=social)](https://github.com/AIS-SPEC)
+[![GitHub Forks](https://img.shields.io/github/forks/AIS-SPEC/AIS-SPEC.svg?style=social)](https://github.com/AIS-SPEC/fork)
 [![Compatibility Test](https://img.shields.io/badge/Test-Suite-Passing-green.svg)](./test-suite/)
 
 ---
@@ -27,19 +27,15 @@ AIS独立于任何平台/语言，旨在成为AI工程化领域的**事实标准
 
 ## 📦 核心连接串格式
 ais://<provider>[:<model>][@<endpoint>]?<param1>=<value1>&<param2>=<value2>&...
-plaintext
 
 ### 示例1：OpenAI（官方接口）
 ais://openai:gpt-4o?api_key=${OPENAI_API_KEY}&temperature=0.7&max_tokens=2048&stream=false
-plaintext
 
 ### 示例2：通义千问（国内平台）
 ais://qwen:qwen-max?api_key=${DASHSCOPE_KEY}&temperature=0.5&timeout=60
-plaintext
 
 ### 示例3：Ollama（本地模型）
 ais://ollama:llama3@http://localhost:11434?temperature=0.8&num_ctx=4096
-plaintext
 
 ---
 
